@@ -1,28 +1,33 @@
-package day8;
+package day10;
 
 public class Employee {
-	
-	int empid;
-	String name;
-	
-	
 
-	public Employee(int empid, String name) {
-		super();
-		this.empid = empid;
+	private int id;
+	private String name;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
 		this.name = name;
 	}
 
-
-	void info()
-	{
-		System.out.println("ID :"  +empid+ "name :" + name );
-	}
-	
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		Employee e=new Employee();
+		e.setId(12);
+		e.setName("vijaya");
+		System.out.println(e.getId());
+		System.out.println(e.getName());
 	}
 
 }
